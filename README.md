@@ -67,7 +67,7 @@ Log into each container and verify access to each repo directory
 
 # Step 0: Setting up Docker Environment
 
-In the Windows 11 WSL Linux command line, check if docker is already installed by running the following commands —
+In the Windows 11 WSL2  Linux command line, check if docker is already installed by running the following commands —
 
 docker version
 
@@ -83,7 +83,24 @@ docker info
 
 If Docker is running, you should see the “1” next to “Running” in the output.
 
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/c66b2ab840dee84a652731f2f0d9cf00bb2b78c0/images/Screenshot%202024-12-27%20114438.png)
+
+
+# Step 1: Build image with Dockerfile for Python/Boto3
+
+Head to the dockerhub and locate the Docker official Ubuntu image, along with the desired tag.
+
+We will use the latest Ubuntu tag “22.04”.
+
 ![image alt]()
+
+
+Now head to your Windows 11 WSL2 Linux , create a directory to store all files, then navigate into the directory.
+
+
+![image alt]() 
+
+
 
 
 
