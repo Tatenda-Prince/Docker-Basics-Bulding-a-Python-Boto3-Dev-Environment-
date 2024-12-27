@@ -92,7 +92,7 @@ Head to the dockerhub and locate the Docker official Ubuntu image, along with th
 
 We will use the latest Ubuntu tag “22.04”.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/def7caa088839be7ce0f63c10077b9bde4afeee0/images/Screenshot%202024-12-26%20193209.png)
 
 
 Now head to your Windows 11 WSL2 Linux , create a directory to store all files, then navigate into the directory.
