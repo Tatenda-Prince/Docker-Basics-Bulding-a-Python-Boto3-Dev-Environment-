@@ -128,8 +128,17 @@ docker image build -t <custom_name_for_image> .
 The image will begin to build based on the configurations in the Dockerfile. Wait a few seconds until it is completed.
 
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/b417e370048af8cc77798ea9f2319ac7008cb128/images/Screenshot%202024-12-26%20194505.png)
 
+
+Once completed, we can list the images in our local system by running the following command —
+
+docker image ls
+
+
+There should be a image, the “python_boto3” images downloaded from Dockerhub which was used to build the custom image from our Dockerfile configurations.
+
+![image alt]()
 
 
 
