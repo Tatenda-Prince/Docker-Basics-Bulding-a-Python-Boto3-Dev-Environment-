@@ -155,9 +155,15 @@ git clone https://github.com/KinzP/eks-cluster-terraform.git
 
 git clone https://github.com/KinzP/cicd_terraform.git
 
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/21ed875e82c886a273cd5371aaf3d7707ef45bbb/images/Screenshot%202024-12-26%20195315.png)
+
+
+If you run the “ls” command, you will see all three repo directories created on your local system.
 
 ![image alt]()
 
+
+Now, lets proceed to Step 3: creating three containers from our Python/Boto3 image.
 
 
 
