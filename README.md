@@ -98,7 +98,41 @@ We will use the latest Ubuntu tag “22.04”.
 Now head to your Windows 11 WSL2 Linux , create a directory to store all files, then navigate into the directory.
 
 
-![image alt]() 
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/d26c0075eaf613f24d2e4450fbabd1f32e833a16/images/Screenshot%202024-12-26%20193437.png) 
+
+We can now create a Dockerfile which will be used to build our Python/Boto3 image by running the following command —
+
+nano Dockerfile
+
+A text editor window should open to edit our Dockerfile. Copy and paste the code below into the text editor.
+
+FROM ubuntu:22.04
+
+RUN apt-get update
+
+RUN apt-get -y install python3-pip \
+    && pip install boto3
+
+Let’s break down what each line is doing —
+The first line of the Dockerfile builds a custom image from “ubuntu:22.04”. The second and third line run two separate commands. The first updates the current packages and the second installs Python/Boto3 on the image.
+
+Proceed by typing the “Ctrl and O” key together to save the file, then press Enter. Type “Ctrl and X” to exit the text editor.
+
+
+We now need to build the image using this Dockerfile. To build the image, run the following command —
+
+Don’t forget to add the “.” at the end of the command to use the Dockerfile in the current directory.
+
+docker image build -t <custom_name_for_image> .
+
+The image will begin to build based on the configurations in the Dockerfile. Wait a few seconds until it is completed.
+
+
+![image alt]()
+
+
+
+
 
 
 
