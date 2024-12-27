@@ -236,13 +236,22 @@ python_LUIT repo —
 
 eks-cluster-terraform repo —
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/5cfe2a410c8fa97d30a805393f845675712428c1/images/Screenshot%202024-12-26%20201139.png)
 
 
 # Success!
 We have verified access to the repo directories from each container enabled by the bind mounts!
 
 Further more, in your local system, create a new file “new_file.txt” in one of the repo directories, then head to its corresponding container.
+
+You should be able to see change also reflected in the repos directory in the corresponding container.
+
+![image alt]()
+
+Replicate this verification method with the other repo directories in your local system and their corresponding containers. Verify that you get the same results!
+
+# Congratulations!
+You’ve successfully “Docked this Boat”. You’ve learned Docker fundamentals commands and concepts by creating a Python/Boto3 development environment which involved building a custom image from a Dockerfile, running containers and creating bind mounts to repos on your local system.
 
 
 
