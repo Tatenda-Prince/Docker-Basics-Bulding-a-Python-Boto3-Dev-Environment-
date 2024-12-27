@@ -196,7 +196,7 @@ docker ps
 
 You should be able to see all three containers running.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/487d749ce9a9060bb89f5d197ebea76d60e648fc/images/Screenshot%202024-12-26%20200023.png)
 
 
 Now that we’ve created our containers, and a bind mount to our repo directories for each, let’s proceed to Step 4: Verifying access to each repo directory from each container.
@@ -222,6 +222,28 @@ If you list all the directories and files in each container in each terminal by 
 Navigate into the repo directories by running “cd” command, then list the directories contents again.
 
 You should be able to view and verify all the files in and folders from the repo directory on you local system is now in your container.
+
+
+cicd_terraform repo —
+
+![image alt]()
+
+
+python_LUIT repo —
+
+![image alt]()
+
+
+eks-cluster-terraform repo —
+
+![image alt]()
+
+
+# Success!
+We have verified access to the repo directories from each container enabled by the bind mounts!
+
+Further more, in your local system, create a new file “new_file.txt” in one of the repo directories, then head to its corresponding container.
+
 
 
 
