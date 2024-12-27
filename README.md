@@ -160,10 +160,71 @@ git clone https://github.com/KinzP/cicd_terraform.git
 
 If you run the “ls” command, you will see all three repo directories created on your local system.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/fb333744f87e5d983b713d43ff725da2c2dec3b0/images/Screenshot%202024-12-26%20195347.png)
 
 
 Now, lets proceed to Step 3: creating three containers from our Python/Boto3 image.
+
+
+# Step 3: Run three Python/Boto3 containers and bind mount each to a repo
+
+To bind mount a container, we will use the flag “-v”. This enables us to mount a file or directory on the host machine into a container.
+
+The following command runs a container with the custom given name “boto3_cicd” from the “python_boto3” image built previously.
+
+It uses the “-d” flag to run detached in the background and the “-t” flag which allocates a virtual terminal session within the container to keep the container running.
+
+The “-v” flag bind mounts the “cicd_terraform” repo directory to the “applications” directory in the container.
+
+Run the commands for all three of the repo directories and name the containers to match the directories they will be mounted to.
+
+cici_terraform repo bind mount —
+
+docker run -d -t --name boto3_cicd -v /home/ec2-user/environment/boto3_dev/cicd_terraform:/cicd_terraform python_boto3 
+
+python_LUIT repo bind mount —
+
+docker run -d -t --name boto3_pl -v /home/ec2-user/environment/boto3_dev/python_LUIT:/python_LUIT python_boto3
+
+eks-cluster-terraform repo bind mount —
+
+docker run -d -t --name boto3_ect -v /home/ec2-user/environment/boto3_dev/eks-cluster-terraform:/eks-cluster-terraform python_boto3
+
+List all the containers we’ve created by running the following command —
+
+docker ps
+
+You should be able to see all three containers running.
+
+![image alt]()
+
+
+Now that we’ve created our containers, and a bind mount to our repo directories for each, let’s proceed to Step 4: Verifying access to each repo directory from each container.
+
+
+# Step 4: Login to containers and verify access to repo directory
+
+Terminal 1 — boto3_cicd
+
+docker exec -it boto3_cicd bash
+
+Terminal 2 — boto3_pl
+
+docker exec -it boto3_pl bash
+
+Terminal 3 — boto3_ect
+
+docker exec -it boto3_ect bash
+
+
+If you list all the directories and files in each container in each terminal by running the “ls” command, you should be able to see the repo directory.
+
+Navigate into the repo directories by running “cd” command, then list the directories contents again.
+
+You should be able to view and verify all the files in and folders from the repo directory on you local system is now in your container.
+
+
+
 
 
 
