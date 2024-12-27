@@ -1,7 +1,7 @@
 # Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-
 "Lets Dock this Boat"
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/d3273d3cd5ee5c602193e383042eb26702dc7eeb/images/Screenshot%202024-12-27%20111744.png)
 
 # Intro
 
