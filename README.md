@@ -138,7 +138,26 @@ docker image ls
 
 There should be a image, the “python_boto3” images downloaded from Dockerhub which was used to build the custom image from our Dockerfile configurations.
 
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/13863b6dab9bcb90bc0cdcda439c8ee371eb4791/images/Screenshot%202024-12-26%20194513.png)
+
+Now that the Python/Boto3 image has been built, we can proceed to Step2 — Downloading three repos to your local system.
+
+
+# Step 2: Download three repos to local system
+
+In your Windows 11 WSL2 Linux , clone any three repos from the internet into our local system in the directory of the Dockerfile. You can choose which ever three you desire.
+
+Run the following three commands to clone these random three public GitHub repos —
+
+git clone https://github.com/ifeanyiro9/python_LUIT.git
+
+git clone https://github.com/KinzP/eks-cluster-terraform.git
+
+git clone https://github.com/KinzP/cicd_terraform.git
+
+
 ![image alt]()
+
 
 
 
