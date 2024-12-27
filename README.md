@@ -226,7 +226,7 @@ You should be able to view and verify all the files in and folders from the repo
 
 cicd_terraform repo —
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/a106d6c10c622a75d2950468d96e00f9f28b612c/images/Screenshot%202024-12-26%20200636.png)
 
 
 python_LUIT repo —
