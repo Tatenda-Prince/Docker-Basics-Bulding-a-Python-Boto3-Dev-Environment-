@@ -73,7 +73,8 @@ docker version
 
 If it is already installed, you should see a similar output in you CLI with the client and server and their installed versions.
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/50ad0e35b112ea23abf2c52c377459d74bb6ad18/images/Screenshot%202024-12-27%20114357.png)
+
 
 Now verify that Docker is running by running the following command —
 
