@@ -231,7 +231,7 @@ cicd_terraform repo —
 
 python_LUIT repo —
 
-![image alt]()
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/edee252122a9b25db7436476224aa0e32690eb7a/images/Screenshot%202024-12-26%20201047.png)
 
 
 eks-cluster-terraform repo —
