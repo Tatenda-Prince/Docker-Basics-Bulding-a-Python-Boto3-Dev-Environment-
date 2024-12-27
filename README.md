@@ -246,7 +246,9 @@ Further more, in your local system, create a new file “new_file.txt” in one 
 
 You should be able to see change also reflected in the repos directory in the corresponding container.
 
-![image alt]()
+
+![image alt](https://github.com/Tatenda-Prince/Docker-Basics-Bulding-a-Python-Boto3-Dev-Environment-/blob/1c4968ca64c6fe719883e9bd04f5acdda38dd080/images/Screenshot%202024-12-26%20201422.png)
+
 
 Replicate this verification method with the other repo directories in your local system and their corresponding containers. Verify that you get the same results!
 
