@@ -47,23 +47,21 @@ A bind mount allows you to mount a file or directory on the host machine into a 
 
 # Prerequisites
 
-Basic knowledge and understanding of containerization and Docker
+1.Basic knowledge and understanding of containerization and Docker
 
-Basic Linux command line knowledge
+2.Basic Linux command line knowledge
 
-AWS Account with an IAM User
-
-Basic knowledge and use of the AWS Cloud9 Interactive Development Environment (IDE)
+3.AWS Account with an IAM User
 
 # Objectives
 
-With a Dockerfile, build an Ubuntu image for Python/Boto3
+1.With a Dockerfile, build an Ubuntu image for Python/Boto3
 
-Download any three repos to local host
+2.Download any three repos to local host
 
-Run three Python/Boto3 containers and bind mount each to one of the repos
+3.Run three Python/Boto3 containers and bind mount each to one of the repos
 
-Log into each container and verify access to each repo directory
+4.Log into each container and verify access to each repo directory
 
 # Step 0: Setting up Docker Environment
 
