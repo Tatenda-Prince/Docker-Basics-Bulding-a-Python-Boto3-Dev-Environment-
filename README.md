@@ -69,7 +69,7 @@ Log into each container and verify access to each repo directory
 
 In the Windows 11 WSL2  Linux command line, check if docker is already installed by running the following commands —
 
-docker version
+~ docker version
 
 If it is already installed, you should see a similar output in you CLI with the client and server and their installed versions.
 
@@ -78,7 +78,7 @@ If it is already installed, you should see a similar output in you CLI with the 
 
 Now verify that Docker is running by running the following command —
 
-docker info
+~ docker info
 
 
 If Docker is running, you should see the “1” next to “Running” in the output.
@@ -102,16 +102,17 @@ Now head to your Windows 11 WSL2 Linux , create a directory to store all files, 
 
 We can now create a Dockerfile which will be used to build our Python/Boto3 image by running the following command —
 
-nano Dockerfile
+~ nano Dockerfile
 
-A text editor window should open to edit our Dockerfile. Copy and paste the code below into the text editor.
+A text editor window should open to edit our Dockerfile. Copy and paste the code below into the text editor:
 
-FROM ubuntu:22.04
+} FROM ubuntu:22.04
 
 RUN apt-get update
 
 RUN apt-get -y install python3-pip \
     && pip install boto3
+    {
 
 Let’s break down what each line is doing —
 The first line of the Dockerfile builds a custom image from “ubuntu:22.04”. The second and third line run two separate commands. The first updates the current packages and the second installs Python/Boto3 on the image.
@@ -123,7 +124,7 @@ We now need to build the image using this Dockerfile. To build the image, run th
 
 Don’t forget to add the “.” at the end of the command to use the Dockerfile in the current directory.
 
-docker image build -t <custom_name_for_image> .
+~ docker image build -t <custom_name_for_image> .
 
 The image will begin to build based on the configurations in the Dockerfile. Wait a few seconds until it is completed.
 
@@ -133,7 +134,7 @@ The image will begin to build based on the configurations in the Dockerfile. Wai
 
 Once completed, we can list the images in our local system by running the following command —
 
-docker image ls
+~ docker image ls
 
 
 There should be a image, the “python_boto3” images downloaded from Dockerhub which was used to build the custom image from our Dockerfile configurations.
@@ -192,7 +193,7 @@ docker run -d -t --name boto3_ect -v /home/ec2-user/environment/boto3_dev/eks-cl
 
 List all the containers we’ve created by running the following command —
 
-docker ps
+~ docker ps
 
 You should be able to see all three containers running.
 
